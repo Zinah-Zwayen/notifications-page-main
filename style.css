@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(assets/fonts/static/PlusJakartaSans-Medium.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  overflow-X: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: hsl(210, 60%, 98%);
+}
+html::-webkit-scrollbar-thumb {
+  background: hsl(211, 68%, 94%);
+}
+
+body {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  margin-inline: 8rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.5rem;
+}
+.container .title {
+  width: 100%;
+  padding: 1rem;
+}
+.container .title .notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container .title .notification h1 {
+  font-weight: 800;
+}
+.container .title .notification h1 span {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(211, 68%, 94%);
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 0.1rem 0.8rem;
+  margin-left: 0.7rem;
+  border-radius: 0.5rem;
+}
+.container .title .notification p {
+  color: hsl(219, 12%, 42%);
+}
+.container .title .notification p:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+.container .msgs {
+  margin-top: 2rem;
+}
+.container .msgs .person-notification {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+}
+.container .msgs .person-notification.unread {
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.container .msgs .person-notification img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.container .msgs .person-notification .details p {
+  color: hsl(219, 12%, 42%);
+}
+.container .msgs .person-notification .details p strong {
+  font-weight: bold;
+}
+.container .msgs .person-notification .details p strong:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+.container .msgs .person-notification .details p .red-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+  margin-left: 0.5rem;
+}
+.container .msgs .person-notification .details small {
+  color: hsl(219, 14%, 63%);
+}
+.container .msgs .person-notification .details .persone-msg {
+  background-color: transparent;
+  border: 0.1px solid hsl(219, 14%, 63%);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  color: hsl(219, 14%, 63%);
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+.container .msgs .person-notification .details .persone-msg:hover {
+  background-color: hsl(211, 68%, 94%);
+  border-color: hsl(211, 68%, 94%);
+  cursor: pointer;
+}
+.container .msgs .person-notification .chess {
+  position: relative;
+  left: 202px;
+  border: 2px solid hsl(211, 68%, 94%);
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+    margin-inline: 0;
+    padding: 0.5rem;
+  }
+  .container .title .notification h1 {
+    font-size: 1rem;
+  }
+  .container .title .notification h1 span {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.5rem;
+    margin-left: 0.3rem;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+  }
+  .container .title .notification p {
+    font-size: 0.7rem;
+  }
+  .container .msgs {
+    margin-top: 0;
+  }
+  .container .msgs .person-notification img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.7rem;
+  }
+  .container .msgs .person-notification .details p {
+    font-size: 0.8rem;
+  }
+  .container .msgs .person-notification .chess {
+    left: 10px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

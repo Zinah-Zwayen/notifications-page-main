@@ -1,0 +1,237 @@
+
+// ============= start general rules ===============
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+$White: hsl(0, 0%, 100%);
+$Very-light-grayish-blue: hsl(210, 60%, 98%);
+$Light-grayish-blue-1: hsl(211, 68%, 94%);
+$Light-grayish-blue-2: hsl(205, 33%, 90%);
+$Grayish-blue: hsl(219, 14%, 63%);
+$Dark-grayish-blue: hsl(219, 12%, 42%);
+$Very-dark-blue: hsl(224, 21%, 14%);
+
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(assets/fonts/static/PlusJakartaSans-Medium.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    overflow-X: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+    &::-webkit-scrollbar-track{
+        background: $Very-light-grayish-blue;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: $Light-grayish-blue-1;
+    }
+}
+body{
+    background-color: $Very-light-grayish-blue;
+}
+// ============ end general rules ================
+
+// ============ start container ==============
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    margin-inline: 8rem;
+    background-color: $White;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1.5rem;
+    .title{
+        width: 100%;
+        padding: 1rem;
+        .notification{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            h1{
+                font-weight: 800;
+                span{
+                    background-color: hsl(219, 85%, 26%);
+                    color: hsl(211, 68%, 94%);
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    padding: 0.1rem .8rem;
+                    margin-left: .7rem;
+                    border-radius: 0.5rem;
+                }
+            }
+            p{
+                color: $Dark-grayish-blue;
+                &:hover{
+                    cursor: pointer;
+                    color: $Blue;
+                }
+            }
+            }
+            
+        }
+
+        .msgs{
+            margin-top: 2rem;
+            .person-notification{
+                display: flex;
+                padding: 1rem;
+                margin: 1rem;
+                
+                &.unread{
+                background-color: $Very-light-grayish-blue;
+                border-radius: .5rem;
+                -webkit-border-radius: .5rem;
+                -moz-border-radius: .5rem;
+                -ms-border-radius: .5rem;
+                -o-border-radius: .5rem;
+                }
+                img{
+                    width: 3rem;
+                    height: 3rem;
+                    margin-right: 1rem;
+                }
+                .details{
+                    p{
+                    color: $Dark-grayish-blue;
+                    strong{
+                        font-weight: bold;
+                        &:hover{
+                            cursor: pointer;
+                            color: $Blue;
+                        }
+                    }
+                    .red-dot{
+                        display: inline-block;
+                        width: .5rem;
+                        height: .5rem;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        background-color: $Red;
+                        margin-left: .5rem;
+                        }
+                    }
+                    small{
+                        color: $Grayish-blue;
+                    }
+                    .persone-msg{
+                        background-color: transparent;
+                            border: .1px solid $Grayish-blue;
+                            padding: 1.5rem;
+                            margin: 1rem 0;
+                            color: $Grayish-blue;
+                            border-radius: .2rem;
+                            -webkit-border-radius: .2rem;
+                            -moz-border-radius: .2rem;
+                            -ms-border-radius: .2rem;
+                            -o-border-radius: .2rem;
+
+                        &:hover{
+                            background-color: $Light-grayish-blue-1;
+                            border-color: $Light-grayish-blue-1;
+                            cursor: pointer;
+                            
+                        }
+                    }
+                }
+                .chess{
+                position: relative;
+                left: 202px;
+                border: 2px solid $Light-grayish-blue-1;
+                border-radius: 0.4rem;
+                }
+                
+                
+            }
+        }
+    }
+
+// ============ end container =============
+
+// ============ start media quiery =============
+@media (max-width: 768px){
+    .container{
+        margin: 0;
+        margin-inline: 0; 
+        padding: .5rem;       
+        .title{
+                .notification{
+                h1{
+                    font-size: 1rem;
+                    span{
+                        font-size: .7rem;
+                        padding: 0.1rem .5rem;
+                        margin-left: .3rem;
+                        border-radius: 0.2rem;
+                        -webkit-border-radius: 0.2rem;
+                        -moz-border-radius: 0.2rem;
+                        -ms-border-radius: 0.2rem;
+                        -o-border-radius: 0.2rem;
+                    }
+                }
+                p{
+                    font-size: .7rem;
+                }
+                }
+                
+            }
+            .msgs{
+                margin-top: 0;
+                
+                .person-notification{
+                    
+                    img{
+                        width: 2rem;
+                        height: 2rem;
+                        margin-right: .7rem;
+                    }
+                    .details{
+                        p{
+                        font-size: .8rem;
+                        }
+                    }
+                    .chess{
+                        left: 10px;
+                    }
+                }
+            }
+        }
+    }
+// ============ end media quiery =============
+
+// ============ start footer ============
+    .attribution {
+        font-size: 11px; 
+        text-align: center; 
+        a { 
+            color: hsl(228, 45%, 44%); 
+        }
+    }
+// ============ end footer ==============

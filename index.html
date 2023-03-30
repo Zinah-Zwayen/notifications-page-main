@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css"> <!--style stylesheet link-->
+  
+  <title>Notifications page</title>
+
+  
+</head>
+<body>
+  <div class="container">
+    <header class="title">
+      <div class="notification">
+        <h1>Notifications<span id="times">3</span></h1>
+        <p id="mark-unread">Mark all as read</p>
+      </div>
+    </header>
+    <main class="msgs">
+      <div id="note" class="person-notification unread">
+        <img src="assets/images/avatar-mark-webber.webp" alt="avater">
+        <div class="details">
+          <p>
+            <strong>Mark Webber</strong>
+            &nbsp;reacted to your recent post&nbsp; 
+            <strong>My first tournament today!</strong>
+            <span class="red-dot"></span>
+          </p>
+          <small class="time">1m ago</small>
+        </div>
+      </div>
+
+      <div id="note" class="person-notification unread">
+        <img src="assets/images/avatar-angela-gray.webp" alt="avater">
+        <div class="details">
+          <p>
+            <strong>Angela Gray</strong>
+            &nbsp;followed you&nbsp;
+            <span class="red-dot"></span>
+          </p>
+          <small class="time">5m ago</small>
+        </div>
+      </div>
+
+      <div id="note" class="person-notification unread">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="avater">
+        <div class="details">
+          <p>
+            <strong>Jacob Thompson</strong>
+            &nbsp;has joined your group Chess Club&nbsp; 
+            <strong>Chess Club</strong>
+            <span class="red-dot"></span>
+          </p>
+          <small class="time">1 day ago</small>
+        </div>
+      </div>
+
+      <div id="note" class="person-notification">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="avater">
+        <div class="details">
+          <p>
+            <strong>Rizky Hasanuddin</strong>
+            &nbsp;sent you a private message&nbsp;
+          </p>
+          <small class="time">5 days ago</small>
+          <div class="persone-msg">
+            <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="note" class="person-notification">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="avater">
+        <div class="details">
+          <p>
+            <strong>Kimberly Smith</strong>
+            &nbsp;commented on your picture&nbsp;
+          </p>
+          <small class="time">1 week ago</small>
+        </div>
+        <img class="chess" src="assets/images/image-chess.webp" alt="Chess">
+      </div>
+
+      <div id="note" class="person-notification">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="avater">
+        <div class="details">
+          <p>
+            <strong>Nathan Peterson</strong>
+            &nbsp;reacted to your recent post&nbsp;
+            <strong>5 end-game strategies to increase your win rate</strong>
+          </p>
+          <small class="time">2 weeks ago</small>
+        </div>
+      </div>
+
+      <div id="note" class="person-notification">
+        <img src="assets/images/avatar-anna-kim.webp" alt="avater">
+        <div class="details">
+          <p>
+            <strong>Anna Kim</strong>
+            &nbsp;left the group&nbsp;
+            <strong>Chess Club</strong>
+          </p>
+          <small class="time">2 weeks ago</small>
+        </div>
+      </div>
+      
+    </main>
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Zinah</a>.
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
